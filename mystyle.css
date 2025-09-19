@@ -6,7 +6,6 @@ body {
     color: #f5f5f5;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
@@ -16,8 +15,7 @@ header {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
-    z-index: 100;
-    
+    z-index: 1000;
 }
 
 .logo-section {
@@ -36,7 +34,6 @@ header h1 {
     font-size: 2rem;
     color: #00bcd4;
     letter-spacing: 1px;
-    
 }
 
 header .tagline {
@@ -53,18 +50,47 @@ nav ul {
     display: flex;
     gap: 50px;
     padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
 }
 
 nav ul li a {
     color: #f5f5f5;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
 }
 
 nav ul li a:hover {
     color: #00bcd4;
     text-decoration: underline;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1e1e1e;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
 }
 
 .about {
@@ -81,8 +107,8 @@ nav ul li a:hover {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .about img {
@@ -133,7 +159,9 @@ img {
 
 .product-card img {
     width: 100%;
+    height: 360px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .product-card h3 {
@@ -169,9 +197,7 @@ img {
 .btn-buy:hover {
     background-color: #00e5ff;
     transform: scale(1.1);
-    
 }
-
 
 .video {
     text-align: center;
@@ -185,7 +211,6 @@ img {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
 }
-
 
 footer {
     background-color: #1e1e1e;
