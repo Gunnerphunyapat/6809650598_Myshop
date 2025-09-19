@@ -12,13 +12,26 @@
   <header>
     <div class="logo-section">
       <img src="resource/logo_g-books.png" alt="โลโก้ร้าน G-Books" class="logo">
-      <h1>G-Books📚</h1>
+      <h1><a href="index.html">G-Books📚</a></h1>
+
     </div>
     <nav>
       <ul>
         <li><a href="index.html">หน้าแรก</a></li>
-        <li><a href="my1stcategory.html">หมวดหมู่ A-level</a></li>
-        <li><a href="my2ndcategory.html">หมวดหมู่ GAT/PAT</a></li>
+        <li><a href="#about">เกี่ยวกับร้าน</a></li>
+        <ul class="menu">
+          <li>
+            <a href="#products">
+              หมวดหมู่ <span class="arrow">▶</span>
+            </a>
+            <ul class="submenu">
+              <li><a href="index.html">🏠หน้าแรก</a></li>
+              <li><a href="My1stCategory.html">📖 หนังสือ A-level</a></li>
+              <li><a href="My2ndCategory.html">📖 หนังสือ GAT/PAT</a></li>
+            </ul>
+          </li>
+        </ul>
+        <li><a href="#contact">ติดต่อ</a></li>
       </ul>
     </nav>
   </header>
@@ -54,18 +67,25 @@
         <span class="price">฿270</span>
         <button class="btn-buy">ซื้อเลย</button>
       </div>
-       <div class="product-card">
-                <img src="resource/math_pat1_books.jpg" alt="หนังสือ หัวใจคณิตศาสตร์ม.ปลาย">
-                <h3>หัวใจคณิตศาสตร์ม.ปลาย</h3>
-                <p>สรุปเนื้อหาคณิตศาสตร์ม.ปลายแนว pat 1 กสพท. เล่มเดียวจบ</p>
-                <span class="price">฿235</span>
-                <button class="btn-buy">ซื้อเลย</button>
-            </div>
+      <div class="product-card">
+        <img src="resource/math_pat1_books.jpg" alt="หนังสือ หัวใจคณิตศาสตร์ม.ปลาย">
+        <h3>หัวใจคณิตศาสตร์ม.ปลาย</h3>
+        <p>สรุปเนื้อหาคณิตศาสตร์ม.ปลายแนว pat 1 กสพท. เล่มเดียวจบ</p>
+        <span class="price">฿235</span>
+        <button class="btn-buy">ซื้อเลย</button>
+      </div>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 G-Books | หมวดหมู่หนังสือ GAT/PAT</p>
+    <footer id="contact">
+      <h3>🔍ติดต่อเรา🔍</h3>
+      <p>📍ที่อยู่: ร้านหนังสือ G-Books มหาวิทยาลัยธรรมศาสตร์ รังสิต ปทุมธานี</p>
+      <p>📞โทร: 099-815-0336</p>
+      <p>📧อีเมล: phunyapat.won@dome.tu.ac.th</p>
+      <p>&copy; 2025 G-Books | All Rights Reserved</p>
+    </footer>
   </footer>
 </body>
 
